@@ -9,13 +9,13 @@
     "#api/*.js": "./build/APIs/*.js"
   },
   "scripts": {
-    "prepare": "husky install",
     "build": "tsc -b v14",
     "prestart": "yarn build",
     "start": "node build/index.js",
     "dev": "node build/index.js",
     "protected": "PROTECTED=1 npm start",
-    "format": "prettier --write --loglevel=warn \"v14/**/*.{js,ts,json}\""
+    "format": "prettier --write --loglevel=warn \"v14/**/*.{js,ts,json}\"",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -52,9 +52,9 @@
     "dotenv": "^16.4.5",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5"
+    "prettier": "3.2.5"
   },
   "lint-staged": {
-    "**/*.{ts,md,json}": "prettier --write"
+    "**/*.{ts,md,json}": "prettier --write --ignore-unknown"
   }
 }
