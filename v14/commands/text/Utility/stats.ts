@@ -15,9 +15,7 @@ export const command: TextCommand = {
 
     try {
       stats.push(`**Node.js** : v${process.versions.node}`);
-      stats.push(
-        `**Discord.js** : v${require('discord.js/package.json').version}`,
-      );
+      stats.push(`**Discord.js** : v${require('discord.js').version}`);
       stats.push(`**Servers** : ${msg.client.guilds.cache.size}`);
       stats.push(`**Channels** : ${msg.client.channels.cache.size}`);
       stats.push(
