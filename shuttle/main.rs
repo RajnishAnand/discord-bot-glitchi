@@ -1,5 +1,6 @@
 use std::process::Command;
 
+#[shuttle_runtime::main]
 fn main() {
     // Update and upgrade system packages
     run_command("apt-get update").expect("Failed to update package list");
