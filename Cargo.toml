@@ -3,5 +3,11 @@ name = "glitchi"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "glitchi"
+path = "shuttle/main.rs"
+
 [dependencies]
 shuttle = "0.8.0"
+
+

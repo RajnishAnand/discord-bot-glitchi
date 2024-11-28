@@ -8,3 +8,5 @@ test/
 
 # Added by cargo
 /target
+.shuttle*
+Secrets*.toml
