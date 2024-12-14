@@ -1,0 +1,13 @@
+name = "glitchi"
+
+# Declare ignored files that should be included in deployment:
+[build]
+assets = [
+  # files
+  "*.sh", 
+  "*.json",
+
+  # folders
+  "v14/*",
+  "res/*"
+]
