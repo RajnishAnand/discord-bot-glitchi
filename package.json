@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "tsc -b v14",
-    "prestart": "npm build",
+    "prestart": "npm run build",
     "start": "node build/index.js",
     "dev": "node build/index.js",
     "protected": "PROTECTED=1 npm start",

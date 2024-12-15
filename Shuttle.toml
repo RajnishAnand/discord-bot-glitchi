@@ -6,6 +6,7 @@ assets = [
   # files
   "*.sh", 
   "*.json",
+  "*.toml",
 
   # folders
   "v14/*",

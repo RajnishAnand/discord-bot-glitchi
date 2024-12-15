@@ -8,5 +8,7 @@ test/
 
 # Added by cargo
 /target
-.shuttle*
+.shuttle-storage
 Secrets*.toml
+!Secrets.example.toml
+.shuttle*
